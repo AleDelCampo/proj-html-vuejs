@@ -1,10 +1,11 @@
 <script>
-
 import Slider from './components/Slider.vue';
+import Header from './components/Header.vue';
 
 export default {
   components: {
-    Slider
+    Slider,
+    Header
   },
 }
 </script>
@@ -13,6 +14,8 @@ export default {
 <template>
   <div>
     <Slider></Slider>
+    
+    <Header></Header>
   </div>
 </template>
 
