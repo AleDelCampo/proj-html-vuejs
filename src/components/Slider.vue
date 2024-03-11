@@ -1,5 +1,11 @@
 <script>
+import Navbar from '../components/Navbar.vue';
+
 export default {
+
+    components: {
+        Navbar,
+    },
 
     data() {
 
@@ -30,31 +36,33 @@ export default {
 
 <template>
 
-    <nav>
-        <div id="slider-container">
-            <img  
-                v-for="(currentImage, index) in slides" 
-                :src='currentImage' 
-                v-show="index == thisSlideIndex"
-                />
-            <div @click="prevSlide()" class="prev"><i class="fa-solid fa-chevron-left"></i></div>
-            <div @click="nextSlide()" class="next"><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-    </nav>
+   
+    <div id="slider-container">
+
+        <Navbar></Navbar>
+
+        <img  
+            v-for="(currentImage, index) in slides" 
+            :src='currentImage' 
+            v-show="index == thisSlideIndex"
+            />
+        <div @click="prevSlide()" class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+        <div @click="nextSlide()" class="next"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
 
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 #slider-container {
     position: relative;
     overflow: hidden;
-    max-height: 800px;
+    max-height: 910px;
 
     img {
         width: 100%;
-        max-height: 800px;
+        max-height: 910px;
     }
 }
 
@@ -62,13 +70,13 @@ export default {
     position: absolute;
     top: 50%;
     border-radius: 50%;
+    border: 2px white solid;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: none;
-    cursor: pointer;
     font-size: 14px;
     padding: 14px 20px;
-    z-index: 1;
+    z-index: 40;
+    cursor: pointer;
 }
 
 .prev:hover,
@@ -77,10 +85,10 @@ export default {
 }
 
 .prev {
-    left: 34px;
+    left: 40px;
 }
 
 .next {
-    right: 34px;
+    right: 40px;
 }
 </style>

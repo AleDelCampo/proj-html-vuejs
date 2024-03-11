@@ -1,10 +1,9 @@
 <script>
-import Navbar from './components/Navbar.vue';
+
 import Slider from './components/Slider.vue';
 
 export default {
   components: {
-    Navbar,
     Slider
   },
 }
@@ -13,7 +12,6 @@ export default {
 
 <template>
   <div>
-    <Navbar></Navbar>
     <Slider></Slider>
   </div>
 </template>
