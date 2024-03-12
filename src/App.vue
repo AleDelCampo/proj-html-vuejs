@@ -5,6 +5,8 @@ import UpcomingMatches from './components/UpcomingMatches.vue';
 import PlayerCards from './components/PlayerCards.vue';
 import Table from './components/Table.vue';
 import Sponsors from './components/Sponsors.vue';
+import News from './components/News.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
@@ -13,7 +15,9 @@ export default {
     UpcomingMatches,
     PlayerCards,
     Table,
-    Sponsors
+    Sponsors,
+    News,
+    Footer
   },
 }
 </script>
@@ -32,6 +36,10 @@ export default {
     <Table></Table>
 
     <Sponsors></Sponsors>
+
+    <News></News>
+
+    <Footer></Footer>
   </div>
 </template>
 
