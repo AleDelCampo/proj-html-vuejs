@@ -74,7 +74,8 @@ export default {
 }
 
 h2 {
-   padding: 20px;
+  font-size: 2em;
+  padding: 60px;
 }
 
 .match {
