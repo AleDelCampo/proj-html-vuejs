@@ -3,13 +3,15 @@ import Slider from './components/Slider.vue';
 import Header from './components/Header.vue';
 import UpcomingMatches from './components/UpcomingMatches.vue';
 import PlayerCards from './components/PlayerCards.vue';
+import Table from './components/Table.vue';
 
 export default {
   components: {
     Slider,
     Header,
     UpcomingMatches,
-    PlayerCards
+    PlayerCards,
+    Table
   },
 }
 </script>
@@ -24,6 +26,8 @@ export default {
     <UpcomingMatches></UpcomingMatches>
 
     <PlayerCards></PlayerCards>
+
+    <Table></Table>
   </div>
 </template>
 

@@ -107,7 +107,7 @@ h2 {
 }
 
 .vs {
-  font-size: 40px;
+  font-size: 2.4em;
   font-weight: bold;
   margin: 0 10px;
 }
