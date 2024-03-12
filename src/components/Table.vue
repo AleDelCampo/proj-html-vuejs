@@ -340,7 +340,7 @@ thead {
 
 #ads {
     width: 100%;
-    height: 240px;
+    height: 280px;
     background-image: url(/src/assets/reklam.jpg);
     background-size: cover;
     background-position: center;
