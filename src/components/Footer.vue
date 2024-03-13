@@ -28,7 +28,7 @@
                 <h4>Join Our Newsletter</h4>
                 <p>Subscribe to be informed about important developments <br>    in our club and football world.</p>
                 <div>
-                    <input class="newsletters" type="email" placeholder="Enter Your Email Here....">
+                    <input name="login" class="newsletters" type="email" placeholder="Enter Your Email Here....">
                 </div>
                 <div>
                     <button class="newsletters">
